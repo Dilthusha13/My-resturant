@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Restaurant</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+   body{
+    background: url('picz/Background 2.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%
+    }
+  
+    /* Hero Section */
+    .hero {
+      background: url('style/upscaled_background.jpg') center center/cover no-repeat;
+      height: 100vh;
+      color: rgb(252, 214, 214);
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px black;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    /* Menu Preview */
+    .menu-preview {
+      background-color: #fdddb8;
+      padding: 60px 20px;
+    }
+
+    .menu-card {
+      border: none;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    
+  </style>
+  </head>
+  <body>
+ <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Daily Taste</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+   <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div>
+        <h1>Welcome to our Food Galaxy</h1>
+        <p> Where ever you go delicious foods is with you</p>
+        <a href="#menu" class="btn btn-secondary btn-lg shadow-sm">Click here to see the menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4"> Choose Your Taste </h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://www.luvaduck.com.au/wp-content/uploads/2025/03/Disegno-LAD-Socials-10_2024_185-1200x900.jpg" class="card-img-top" alt="Dish 1">
+            <div class="card-body">
+              <h5 class="card-title">Peking duck</h5>
+              <p class="card-text"> whole duck, five-spice powder, soy sauce, hoisin sauce, honey, salt, ground ginger, and maltose syrup.</p>
+              <p class="fw-bold">LKR 3,900.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://hikarimiso.com/wp-content/uploads/2024/05/Trimmed_03_Miso-Ramen_02_M.jpg" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Ramen</h5>
+              <p class="card-text">broth, tare (seasoning), noodles, toppings, and aroma oil</p>
+              <p class="fw-bold">LKR 1,650.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2021/01/27/thumbs/871x871/88738.jpg" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Carbonara</h5>
+              <p class="card-text">spaghetti pasta, guanciale (or pancetta), Pecorino Romano cheese, eggs (or egg yolks), and black pepper</p>
+              <p class="fw-bold">LKR 2,600.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://jref.com/media/sushi-set.6802/full?d=1462374376" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Sushi</h5>
+              <p class="card-text">rice, nori (seaweed), seafood, vegetables, and various condiments</p>
+              <p class="fw-bold">LKR  1,600.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://www.simplyrecipes.com/thmb/q3Jww3ca9JlybaM1vR00Afyx4yI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2018__07__Seafood-Paella-HORIZONTAL-ce4d8fe93ec045c0a868ec065f49800a.jpg" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Seafood Paella</h5>
+              <p class="card-text">paella rice, saffron, fish or seafood (like shrimp, mussels, and clams), and vegetables such as onions, bell peppers, and tomatoes</p>
+              <p class="fw-bold">LKR 2,700.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://www.allrecipes.com/thmb/SZjdgaXhmkrRNLoOvdxuAktwk3E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/228443-authentic-pho-DDMFS-4x3-0523f6531ccf4dbeb4b5bde52e007b1e.jpg" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Pho</h5>
+              <p class="card-text">rice noodles, a flavorful broth, thinly sliced meat (usually beef or chicken), and a variety of fresh herbs and garnishes</p>
+              <p class="fw-bold">LKR 1,230.00</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://cookingorgeous.com/wp-content/uploads/2021/06/lamb-shish-kebab-20.jpg" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Kebab</h5>
+              <p class="card-text">meat (beef, lamb, chicken, or ground meat), spices (cumin, coriander, paprika, garlic powder), herbs (mint, cilantro), and vegetables (onions, peppers, tomatoes).</p>
+              <p class="fw-bold">LKR 1,880.00</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2019-06-Easy-Shrimp-Ceviche-with-Avocado%2FEasy-Shrimp-Ceviche-with-Avocado_010_a68f7c_cropped" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Ceviche</h5>
+              <p class="card-text">fresh raw fish or shrimp, citrus juices (lime and/or lemon), onions, cilantro, and chili peppers</p>
+              <p class="fw-bold">LKR 1,210.00</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://www.recipetineats.com/tachyon/2014/11/Beef-Rendang-12.jpg?resize=1200%2C857&zoom=0.54" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Beef Rendang</h5>
+              <p class="card-text"> beef (chuck steak or brisket), coconut milk, lemongrass, ginger, garlic, shallots, chilies, galangal, turmeric, and various spices like cumin, coriander, and cinnamon</p>
+              <p class="fw-bold">LKR 3,220.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/delish-202210-soupdumplings-182-1665605386.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Dumplings</h5>
+              <p class="card-text"> flour, water, and sometimes salt</p>
+              <p class="fw-bold">LKR 820.00</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://cdn.jwplayer.com/v2/media/BRU94itM/poster.jpg?width=720" class="card-img-top" alt="Dish 2">
+            <div class="card-body">
+              <h5 class="card-title">Jollof Rice</h5>
+              <p class="card-text"> omatoes, red bell peppers, onions, garlic, ginger, and Scotch bonnet peppers</p>
+              <p class="fw-bold">LKR 1,120.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://www.recipetineats.com/tachyon/2019/03/Greek-Moussaka_3-re-edited-SQ.jpg?resize=500%2C375" class="card-img-top" alt="Dish 3">
+            <div class="card-body">
+              <h5 class="card-title">Moussaka</h5>
+              <p class="card-text">roasted eggplant or potatoes, a meat sauce (often lamb or beef), and a béchamel sauce</p>
+              <p class="fw-bold">LKR 2,100.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4"> Drinks </h2>
+      <div class="row g-4">
+        
+         <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://dancearoundthekitchen.com/wp-content/uploads/2023/07/DSC_0382.jpg" class="card-img-top" alt="Dish 3">
+            <div class="card-body">
+              <h5 class="card-title">Strawberry lemonade</h5>
+              <p class="fw-bold">LKR 560,00.00</p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://www.southernliving.com/thmb/sAY6kyuR_LekpIqa26S9SB6N9MY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Peach_Lemonade_003-c75468de9a264e279217a1111dd86600.jpg" class="card-img-top" alt="Dish 3">
+            <div class="card-body">
+              <h5 class="card-title">Basil lemonade</h5>
+              <p class="fw-bold">LKR 340,00.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://mindfulmocktail.com/wp-content/uploads/2021/01/virgin-margarita-recipe.jpg" class="card-img-top" alt="Dish 3">
+            <div class="card-body">
+              <h5 class="card-title">Mojito</h5>
+              <p class="fw-bold">LKR 350,00.00</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://www.acouplecooks.com/wp-content/uploads/2023/12/Virgin-Margarita-0011.jpg" class="card-img-top" alt="Dish 3">
+            <div class="card-body">
+              <h5 class="card-title">Virgin margarita</h5>
+              <p class="fw-bold">LKR 420,00.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://recipefairy.com/wp-content/uploads/2022/08/virgin-sangria-mocktail.jpg" class="card-img-top" alt="Dish 3">
+            <div class="card-body">
+              <h5 class="card-title">Non-alcoholic sangria</h5>
+              <p class="fw-bold">LKR 340,00.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://www.thespruceeats.com/thmb/hZgCGe6yaJLcyOgDHMv0H6-bN20=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/virgin-pina-colada-recipe-2097115-hero-images-5-25cd3a15f6204c1d87fdf8c60b6b144e.jpg" class="card-img-top" alt="Dish 3">
+            <div class="card-body">
+              <h5 class="card-title">Virgin pina colada</h5>
+              <p class="fw-bold">LKR 429,00.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="https://img.freepik.com/free-photo/view-delicious-food-reunion-dinner-anime-style_23-2151022623.jpg?semt=ais_hybrid&w=740" width="400px" height="400px">
+        </div>
+        <div class="col-md-6">
+          <p>Welcome to Our Restaurant. At My restaurant , we believe that great food brings people together. Nestled in the heart of Negombo, our restaurant is a celebration of bold flavors, warm hospitality, and unforgettable dining experiences.Whether you’re here for a comforting local favorite or an adventurous new dish, each plate is crafted with fresh ingredients, care, and creativity.</p>
+          <p> From signature starters to mouthwatering mains and refreshing beverages, every item on our menu is designed to delight your taste buds.Join us and discover a place where tradition meets taste, and every meal feels like home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5><i class="bi bi-geo-alt-fill"></i> Location</h5>
+          <p>123 Galle Road, Colombo 03, Sri Lanka</p>
+          <h5><i class="bi bi-clock-fill"></i> Opening Hours</h5>
+          <p>Daily: 8:00 AM – 10:00 PM</p>
+          <h5><i class="bi bi-telephone-fill"></i> Phone</h5>
+          <p>+94 77 882 7978</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 My Restaurant. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+  </html>
